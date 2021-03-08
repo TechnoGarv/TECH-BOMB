@@ -27,14 +27,14 @@ banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing TBomb'
+        echo 'Introducing TechBomb'
     else
-        figlet TBomb
+        figlet TechBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
         echo -e "*****This Bomber Was Created By Techno Garv*****"
     else
-        echo -e "reated By j+xnnoOmHbzFS3JesJO0xF6ohdN83MpEbkbnkA/tRTg= "
+        echo -e "Created By j+xnnoOmHbzFS3JesJO0xF6ohdN83MpEbkbnkA/tRTg= "
         toilet -f mono12 -F border Techno Garv
     fi
     echo -e "For Any Queries Join Me!!!"
