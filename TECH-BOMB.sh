@@ -21,25 +21,24 @@ detect_distro() {
 }
 
 pause() {
-    read -n1 -r -p "Press any key to continue..." key
+    read -n1 -r -p "Move Your Ass and Press any key to continue..." key
 }
 banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing TechBomb'
+        echo 'Introducing TBomb'
     else
-        figlet TechBomb
+        figlet TBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
-        echo -e "*****This Bomber Was Created By Techno Garv*****"
+        echo -e "\e[4;34m This Bomber Was Created By \e[1;32m🅃🄴🄲🄷🄽🄾🄶🄰🅁🅅 \e[0m"
     else
-        echo -e "Created By j+xnnoOmHbzFS3JesJO0xF6ohdN83MpEbkbnkA/tRTg= "
-        toilet -f mono12 -F border Techno Garv
+        echo -e "\e[1;34mCreated By \e[1;34m"
+        toilet -f mono12 -F border 🅃🄴🄲🄷🄽🄾🄶🄰🅁🅅
     fi
-    echo -e "For Any Queries Join Me!!!"
-    echo -e "Whatsapp me:9528265082.."
-    echo " "
+    echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
+    echo -e "\e[1;32m           Whatsapp:9528265082 \e[0m"
 
 }
 
@@ -103,9 +102,9 @@ fi
 while :
 do
     banner
-    echo -e "\e[4;31m Please Read Instruction Carefully !!! \e[0m"
+    echo -e "\e[4;31m Please Read Instruction Carefully Bitch !!! \e[0m"
     echo " "
-    echo "Press 1 To  Start SMS  Bomber "
+    echo "Press 1 To  Start SMS  Bomber  "
     echo "Press 2 To  Start CALL Bomber "
     echo "Press 3 To  Start MAIL Bomber (Not Yet Available)"
     echo "Press 4 To  Update (Works On Linux And Linux Emulators) "
