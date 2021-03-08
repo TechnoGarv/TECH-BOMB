@@ -115,4 +115,4 @@ bash TechBomb.sh
 
 The package `toilet` cannot be installed yet. But TechBomb does still work.
 
-******************CREATED BY TECHNO GARV************************************
+**CREATED BY TECHNO GARV*
