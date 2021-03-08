@@ -4,7 +4,7 @@ import os
 with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
-with open(os.path.join("tbomb", ".version"), "r", encoding="utf8") as fh:
+with open(os.path.join("techbomb", ".version"), "r", encoding="utf8") as fh:
     version = fh.read().strip()
 
 with open("requirements.txt", "r", encoding="utf8") as fh:
@@ -21,8 +21,8 @@ setup(
     long_description_content_type="text/markdown",
     author='TheSpeedX',
     author_email='ggspeedx29@gmail.com',
-    url='https://github.com/TheSpeedX/TBomb',
-    download_url="https://github.com/TheSpeedX/TBomb/archive/pypi.zip",
+    url='https://github.com/TechnoGarv/TECH-BOMB.git',
+    download_url="https://github.com/TechnoGarv/TECH-BOMB/archive/pypi.zip",
         keywords=['android', 'spam', 'sms', 'bomb', 'termux',
                   'sms-bomber', 'bomber', 'sms-bomb', 'bombing', 'call-bomb'],
     classifiers=[
@@ -38,7 +38,7 @@ setup(
     license='GPL',
     entry_points={
             'console_scripts': [
-                'tbomb = tbomb.bomber:main',
+                'techbomb = techbomb.bomber:main',
             ],
     },
     python_requires='>=3.5'
