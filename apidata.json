@@ -1,5 +1,4 @@
 {
-    "contributors":["TechnoGarv","Garv"],
     "version":"2.1",
     "sms": {
         "91": [
@@ -37,8 +36,8 @@
                 "url": "https://www.gapoon.com/userSignup",
                 "data": {
                     "mobile": "{target}",
-                    "email": "garvkamra13@gmail.com",
-                    "name": "TechnoGarv"
+                    "email": "Yourpoop@gmail.com",
+                    "name": "Poop"
                 },
                 "identifier": "1"
             },
