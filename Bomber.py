@@ -22,7 +22,7 @@ try:
     from colorama import Fore, Style
 except ImportError:
     print("\tSome dependencies could not be imported (possibly not installed)")
-    print(
+    print("Move your ass and follow these steps"
         "Type `pip3 install -r requirements.txt` to "
         " install all required packages")
     sys.exit(1)
@@ -70,7 +70,7 @@ def check_intr():
         requests.get("https://motherfuckingwebsite.com")
     except Exception:
         bann_text()
-        mesgdcrt.FailureMessage("Poor internet connection detected")
+        mesgdcrt.FailureMessage("Poor internet connection detected you bitch")
         sys.exit(2)
 
 
@@ -88,7 +88,7 @@ def do_zip_update():
     if success:
         mesgdcrt.SuccessMessage("TechBomb was updated to the latest version")
         mesgdcrt.GeneralMessage(
-            "Please run the script again to load the latest version")
+            "Please move your fat ass and run the script again to load the latest version")
     else:
         mesgdcrt.FailureMessage("Unable to update TechBomb.")
         mesgdcrt.WarningMessage(
@@ -119,7 +119,7 @@ def do_git_update():
     if success:
         mesgdcrt.SuccessMessage("TechBomb was updated to the latest version")
         mesgdcrt.GeneralMessage(
-            "Please run the script again to load the latest version")
+            "Run the script again to load the latest version You Asshole")
     else:
         mesgdcrt.FailureMessage("Unable to update TechBomb.")
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
@@ -140,7 +140,7 @@ def update():
 def check_for_updates():
     mesgdcrt.SectionMessage("Checking for updates")
     fver = requests.get(
-            ""
+            "https://github.com/TechnoGarv/TECH-BOMB/blob/main/.version"
             ).text.strip()
     if fver != __VERSION__:
         mesgdcrt.WarningMessage("An update is available")
@@ -148,13 +148,13 @@ def check_for_updates():
         update()
     else:
         mesgdcrt.SuccessMessage("TechBomb is up-to-date")
-        mesgdcrt.GeneralMessage("Starting TechBomb")
+        mesgdcrt.GeneralMessage("Starting TechBomb Tight Up Your Ass.....")
 
 
 def notifyen():
     try:
         noti = requests.get(
-            ""
+            "https://github.com/TechnoGarv/TECH-BOMB/blob/main/.notify"
             ).text.upper()
         if len(noti) > 10:
             mesgdcrt.SectionMessage("NOTIFICATION: " + noti)
@@ -199,25 +199,25 @@ def get_mail_info():
 
 def pretty_print(cc, target, success, failed):
     requested = success+failed
-    mesgdcrt.SectionMessage("Bombing is in progress - Please be patient")
+    mesgdcrt.SectionMessage("Yo Bitch Bombing is in progress - Please be Fucking Patient")
     mesgdcrt.GeneralMessage(
-        "Please stay connected to the internet during bombing")
+        "Bitch stay connected to the internet While I'm bombing your Ass")
     mesgdcrt.GeneralMessage("Target       : " + cc + " " + target)
     mesgdcrt.GeneralMessage("Sent         : " + str(requested))
     mesgdcrt.GeneralMessage("Successful   : " + str(success))
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("TechBomb was created by Techno Garv")
+    mesgdcrt.SuccessMessage("TechBomb was created by TechnoGarv")
 
 
 def workernode(mode, cc, target, count, delay, max_threads):
 
     api = APIProvider(cc, target, mode, delay=delay)
     clr()
-    mesgdcrt.SectionMessage("Gearing up the Bomber - Please be patient")
+    mesgdcrt.SectionMessage("Gearing up Your Ass - Please be patient")
     mesgdcrt.GeneralMessage(
-        "Please stay connected to the internet during bombing")
+        "Bitch stay connected to the internet While I'm bombing your Ass")
     mesgdcrt.GeneralMessage("API Version   : " + api.api_version)
     mesgdcrt.GeneralMessage("Target        : " + cc + target)
     mesgdcrt.GeneralMessage("Amount        : " + str(count))
@@ -248,7 +248,7 @@ def workernode(mode, cc, target, count, delay, max_threads):
                 result = job.result()
                 if result is None:
                     mesgdcrt.FailureMessage(
-                        "Bombing limit for your target has been reached")
+                        "Bombing limit for your target's Ass has been reached")
                     mesgdcrt.GeneralMessage("Try Again Later !!")
                     input(mesgdcrt.CommandMessage("Press [ENTER] to exit"))
                     bann_text()
@@ -318,7 +318,7 @@ def selectnode(mode="sms"):
             except KeyboardInterrupt as ki:
                 raise ki
             except Exception:
-                mesgdcrt.FailureMessage("Read Instructions Carefully !!!")
+                mesgdcrt.FailureMessage("Read Instructions Carefully Bitch !!!")
                 print()
 
         workernode(mode, cc, target, count, delay, max_threads)
@@ -339,34 +339,33 @@ except FileNotFoundError:
 
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['SpeedX', 't0xic0der', 'scpketer', 'Stefan']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
 RESET_ALL = Style.RESET_ALL
 
-description = """TBomb - Your Friendly Spammer Application
+description = """TechBomb - Your Friendly Spammer Application
 
-TBomb can be used for many purposes which incudes -
+TechBomb can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-TBomb is not intented for malicious uses.
+TechBomb is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
-                                 epilog='Coded by Techno Garv !!!')
+                                 epilog='Coded by Technogarv !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
-                    help="start TechBomb with SMS Bomb mode")
+                    help="start TBomb with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
-                    help="start TechBomb with CALL Bomb mode")
+                    help="start TBomb with CALL Bomb mode")
 parser.add_argument("-mail", "--mail", action="store_true",
-                    help="start TechBomb with MAIL Bomb mode")
+                    help="start TBomb with MAIL Bomb mode")
 parser.add_argument("-u", "--update", action="store_true",
-                    help="update TechBomb")
+                    help="update TBomb")
 parser.add_argument("-c", "--contributors", action="store_true",
-                    help="show current TechBomb contributors")
+                    help="show current TBomb contributors")
 parser.add_argument("-v", "--version", action="store_true",
                     help="show current TechBomb version")
 
