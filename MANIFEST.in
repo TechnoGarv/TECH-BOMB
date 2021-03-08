@@ -5,6 +5,6 @@ include *.md
 include LICENSE
 
 # Include the data files
-recursive-include tbomb *
+recursive-include techbomb *
 
 prune __pycache__
