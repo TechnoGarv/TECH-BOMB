@@ -114,3 +114,5 @@ bash TechBomb.sh
 #### Missing Tools on MacOS & iSH App
 
 The package `toilet` cannot be installed yet. But TechBomb does still work.
+
+******************CREATED BY TECHNO GARV************************************
